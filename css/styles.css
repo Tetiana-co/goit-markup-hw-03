@@ -280,6 +280,10 @@ a {
   background-color: #f4f4fd;
 }
 
+.portfolio-container {
+  border: 1px solid #e7e9fc;
+}
+
 .section_title {
   font-size: 36px;
   line-height: 1.11;
