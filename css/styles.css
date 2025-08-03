@@ -1,9 +1,8 @@
-.body {
+body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
 }
-
 h1,
 h2,
 h3,
@@ -50,22 +49,17 @@ a {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+
 .header-logo {
   margin-left: 76px;
   padding: 24px 0;
 }
+
 .header-logo .logo-part {
   font: 700 18px / 1.17 "Raleway", sans-serif;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
-}
-
-.footer-logo .logo-part {
-  font: 700 18px / 1.17 "Raleway", sans-serif;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #f4f4fd;
 }
 
 .nav-list {
@@ -112,6 +106,9 @@ a {
 
 .page-hero {
   background-color: #2e2f42;
+  padding-top: 356px;
+  padding-bottom: 186px;
+  text-align: center;
 }
 
 .hero-button {
@@ -122,6 +119,10 @@ a {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
 }
 
 .hero-button:hover,
@@ -137,6 +138,40 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 48px;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Features Section */
+.page-features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.feature {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.feature-item {
+  width: 264px;
 }
 
 .feature-title {
@@ -145,6 +180,8 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+  text-align: left;
 }
 
 .feature-text {
@@ -153,10 +190,19 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: left;
 }
 
+.feature {
+  display: none;
+}
+
+/* Team Section */
 .page-team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
 }
 
 .team_title {
@@ -167,6 +213,21 @@ a {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.team_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.team_wrapper {
+  padding: 32px 0;
 }
 
 .team_name {
@@ -176,6 +237,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team_role {
@@ -189,9 +251,17 @@ a {
 
 .team_item {
   background-color: #fff;
+  width: 264px;
+  border-radius: 0 0 4px 4px;
+  text-align: center;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.16),
+    0px 1px 6px rgba(0, 0, 0, 0.08);
 }
 
+/* Portfolio Section */
 .page-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: #f4f4fd;
 }
 
@@ -202,6 +272,28 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.portfolio_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.portfolio_item {
+  width: 360px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.16),
+    0px 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.project_wrapper {
+  padding: 32px 16px;
 }
 
 .portfolio_title {
@@ -219,6 +311,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .project_category {
   font-weight: 400;
@@ -228,12 +321,24 @@ a {
   color: #434455;
 }
 
+/* Footer */
+.page-footer {
+  background-color: #2e2f42;
+  line-height: 1.5;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .footer-text {
+  max-width: 264px;
   font: 400 16px / 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-.page-footer {
-  background-color: #2e2f42;
-  line-height: 1.5;
+.footer-logo .logo-part {
+  display: inline-block;
+  font: 700 18px / 1.17 "Raleway", sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
 }
